@@ -5,8 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>پروژه‌های درسی | برنامه نویسی با امیر علی</title>
 
@@ -24,29 +23,38 @@
 
     <ul class="nav-links">
 
-        <li>
-            <a href="index.html">خانه</a>
-        </li>
+        <li><a href="index.html">خانه</a></li>
 
-        <li>
-            <a href="learn.html">آموزش</a>
-        </li>
+        <li><a href="learn.html">آموزش</a></li>
 
-        <li>
-            <a href="projects.html">پروژه‌ها</a>
-        </li>
+        <li><a href="projects.html">پروژه‌ها</a></li>
 
-        <li>
-            <a href="school-projects.html">پروژه‌های درسی</a>
-        </li>
+        <li><a href="school-projects.html">پروژه‌های درسی</a></li>
 
-        <li>
-            <a href="about.html">درباره</a>
-        </li>
+        <li><a href="about.html">درباره</a></li>
 
     </ul>
 
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
 </nav>
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="index.html">خانه</a>
+
+    <a href="learn.html">آموزش</a>
+
+    <a href="projects.html">پروژه‌ها</a>
+
+    <a href="school-projects.html">پروژه‌های درسی</a>
+
+    <a href="about.html">درباره</a>
+
+</div>
 
 
 <main class="page">
@@ -54,6 +62,10 @@
 <div class="container">
 
     <header class="page-header">
+
+        <span class="small-title">
+            SCHOOL PROJECTS
+        </span>
 
         <h1>
             پروژه‌های
@@ -69,11 +81,12 @@
     </header>
 
 
-    <section class="section">
+    <section class="page-section">
 
         <div class="cards">
 
-            <div class="card school-project">
+            <div class="card school-project"
+                 onclick="openImage('IGOK.jpg')">
 
                 <img
                     src="IGOK.jpg"
@@ -100,10 +113,30 @@
 </main>
 
 
+<div class="image-modal" id="imageModal" onclick="closeImage()">
+
+    <span class="close-modal">
+        ×
+    </span>
+
+    <img id="modalImage" src="" alt="تصویر پروژه">
+
+</div>
+
+
 <footer>
 
-    © 2026
-    <strong>برنامه نویسی با امیر علی</strong>
+    <div class="footer-logo">
+        برنامه نویسی <span>با امیر علی</span>
+    </div>
+
+    <p>
+        یاد بگیر، بساز، تجربه کن.
+    </p>
+
+    <div class="copyright">
+        © 2026 برنامه نویسی با امیر علی
+    </div>
 
 </footer>
 
