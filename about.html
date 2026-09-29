@@ -5,8 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>درباره | برنامه نویسی با امیر علی</title>
 
@@ -22,108 +21,127 @@
         برنامه نویسی <span>با امیر علی</span>
     </a>
 
-<ul class="nav-links">
+    <ul class="nav-links">
 
-    <li><a href="index.html">خانه</a></li>
+        <li><a href="index.html">خانه</a></li>
 
-    <li><a href="learn.html">آموزش</a></li>
+        <li><a href="learn.html">آموزش</a></li>
 
-    <li><a href="projects.html">پروژه‌ها</a></li>
+        <li><a href="projects.html">پروژه‌ها</a></li>
 
-    <li><a href="school-projects.html">پروژه‌های درسی</a></li>
+        <li><a href="school-projects.html">پروژه‌های درسی</a></li>
 
-    <li><a href="about.html">درباره</a></li>
+        <li><a href="about.html">درباره</a></li>
 
-</ul>
+    </ul>
+
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
 
 </nav>
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="index.html">خانه</a>
+
+    <a href="learn.html">آموزش</a>
+
+    <a href="projects.html">پروژه‌ها</a>
+
+    <a href="school-projects.html">پروژه‌های درسی</a>
+
+    <a href="about.html">درباره</a>
+
+</div>
 
 
 <main class="page">
 
 <div class="container">
 
-<header class="page-header">
+    <header class="page-header">
 
-    <h1>
-        درباره
-        <span class="gradient">
-            ما
+        <span class="small-title">
+            ABOUT
         </span>
-    </h1>
 
-    <p>
-        درباره پروژه «برنامه نویسی با امیر علی»
-    </p>
-
-</header>
-
-
-<section class="section">
-
-<div class="about-grid">
-
-    <div class="about-box">
-
-        <h2>
-            👨‍💻 برنامه نویسی با امیر علی
-        </h2>
+        <h1>
+            درباره
+            <span class="gradient">
+                من
+            </span>
+        </h1>
 
         <p>
-            این وب‌سایت با هدف آموزش ساده،
-            کاربردی و جذاب برنامه‌نویسی ایجاد شده است.
+            آشنایی با «برنامه نویسی با امیر علی»
         </p>
 
-    </div>
+    </header>
 
 
-    <div class="about-box">
+    <section class="about-grid">
 
-        <h2>
-            🎯 هدف
-        </h2>
+        <div class="about-photo">
 
-        <p>
-            هدف این پروژه این است که یادگیری
-            برنامه‌نویسی را با ساخت پروژه‌های واقعی
-            جذاب‌تر و قابل فهم‌تر کنیم.
-        </p>
+            <img
+                src="MY.jpg"
+                alt="امیر علی"
+            >
 
-    </div>
+        </div>
 
 
-    <div class="about-box">
+        <div class="about-content">
 
-        <h2>
-            💡 ایده
-        </h2>
+            <div class="about-box">
 
-        <p>
-            از یک صفحه ساده شروع می‌کنیم و
-            به مرور سایت را به یک مجموعه آموزشی
-            کامل تبدیل می‌کنیم.
-        </p>
+                <h2>
+                    👋 سلام!
+                </h2>
 
-    </div>
+                <p>
+                    به سایت «برنامه نویسی با امیر علی» خوش آمدی.
+                    اینجا جایی برای یادگیری برنامه‌نویسی،
+                    ساخت پروژه و تجربه کردن ایده‌های جدید است.
+                </p>
+
+            </div>
 
 
-    <div class="about-box">
+            <div class="about-box">
 
-        <h2>
-            🚀 آینده
-        </h2>
+                <h2>
+                    💻 درباره این پروژه
+                </h2>
 
-        <p>
-            آموزش‌های بیشتر، پروژه‌های جدید،
-            ابزارهای آنلاین و بخش‌های تعاملی
-            در آینده به سایت اضافه خواهند شد.
-        </p>
+                <p>
+                    این وب‌سایت از یک پروژه ساده HTML شروع شده
+                    و قرار است به مرور به یک مجموعه آموزشی
+                    و پروژه‌ای بزرگ‌تر تبدیل شود.
+                </p>
 
-    </div>
+            </div>
 
-</div>
 
-</section>
+            <div class="about-box">
+
+                <h2>
+                    🚀 هدف
+                </h2>
+
+                <p>
+                    هدف این است که برنامه‌نویسی را فقط با
+                    خواندن مطالب یاد نگیریم؛ بلکه با ساختن،
+                    آزمایش کردن و اشتباه کردن تجربه کنیم.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </div>
 
@@ -132,8 +150,17 @@
 
 <footer>
 
-    © 2026
-    <strong>برنامه نویسی با امیر علی</strong>
+    <div class="footer-logo">
+        برنامه نویسی <span>با امیر علی</span>
+    </div>
+
+    <p>
+        یاد بگیر، بساز، تجربه کن.
+    </p>
+
+    <div class="copyright">
+        © 2026 برنامه نویسی با امیر علی
+    </div>
 
 </footer>
 
