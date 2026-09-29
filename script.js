@@ -1,5 +1,3 @@
-console.log("Programming with Amir Ali");
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const currentPage =
@@ -16,5 +14,52 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
     });
+
+});
+
+
+function toggleMenu() {
+
+    const menu = document.getElementById("mobileMenu");
+
+    if (menu) {
+        menu.classList.toggle("show");
+    }
+
+}
+
+
+function openImage(imagePath) {
+
+    const modal = document.getElementById("imageModal");
+    const image = document.getElementById("modalImage");
+
+    if (!modal || !image) {
+        return;
+    }
+
+    image.src = imagePath;
+
+    modal.classList.add("show");
+
+}
+
+
+function closeImage() {
+
+    const modal = document.getElementById("imageModal");
+
+    if (modal) {
+        modal.classList.remove("show");
+    }
+
+}
+
+
+document.addEventListener("keydown", function (event) {
+
+    if (event.key === "Escape") {
+        closeImage();
+    }
 
 });
