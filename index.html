@@ -2,16 +2,12 @@
 <html lang="fa" dir="rtl">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>برنامه نویسی با امیر علی</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -22,60 +18,187 @@
         برنامه نویسی <span>با امیر علی</span>
     </a>
 
-<ul class="nav-links">
+    <ul class="nav-links">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="learn.html">آموزش</a></li>
+        <li><a href="projects.html">پروژه‌ها</a></li>
+        <li><a href="school-projects.html">پروژه‌های درسی</a></li>
+        <li><a href="about.html">درباره</a></li>
+    </ul>
 
-    <li><a href="index.html">خانه</a></li>
-
-    <li><a href="learn.html">آموزش</a></li>
-
-    <li><a href="projects.html">پروژه‌ها</a></li>
-
-    <li><a href="school-projects.html">پروژه‌های درسی</a></li>
-
-    <li><a href="about.html">درباره</a></li>
-
-</ul>
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
 
 </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">خانه</a>
+    <a href="learn.html">آموزش</a>
+    <a href="projects.html">پروژه‌ها</a>
+    <a href="school-projects.html">پروژه‌های درسی</a>
+    <a href="about.html">درباره</a>
+</div>
 
 
 <main>
 
 <section class="hero">
 
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
     <div class="hero-content">
 
         <div class="badge">
-            💻 دنیای برنامه‌نویسی
+            ✦ به دنیای برنامه‌نویسی خوش آمدید
         </div>
 
         <h1>
             برنامه‌نویسی را
             <br>
             <span class="gradient">
-                خلاقانه یاد بگیر
+                با خلاقیت یاد بگیر
             </span>
         </h1>
 
         <p>
-            به «برنامه نویسی با امیر علی» خوش آمدی؛
-            جایی برای یادگیری برنامه‌نویسی،
-            ساخت پروژه و کشف دنیای تکنولوژی.
+            آموزش، تجربه و ساخت پروژه‌های واقعی
+            در «برنامه نویسی با امیر علی».
         </p>
 
         <div class="buttons">
 
-            <a href="learn.html"
-               class="btn btn-primary">
+            <a href="learn.html" class="btn btn-primary">
                 شروع یادگیری
+                <span>←</span>
             </a>
 
-            <a href="projects.html"
-               class="btn btn-secondary">
+            <a href="projects.html" class="btn btn-secondary">
                 مشاهده پروژه‌ها
             </a>
 
         </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>01</strong>
+                <span>یادگیری</span>
+            </div>
+
+            <div>
+                <strong>∞</strong>
+                <span>ایده</span>
+            </div>
+
+            <div>
+                <strong>01</strong>
+                <span>شروع</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section intro-section">
+
+    <div class="section-heading">
+
+        <span class="small-title">
+            مسیر ما
+        </span>
+
+        <h2>
+            از ایده تا <span class="gradient">پروژه</span>
+        </h2>
+
+        <p>
+            اینجا فقط کدنویسی یاد نمی‌گیریم؛
+            ایده‌هایمان را به چیزهای واقعی تبدیل می‌کنیم.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card feature-card">
+
+            <div class="icon">📚</div>
+
+            <h3>یادگیری</h3>
+
+            <p>
+                مفاهیم برنامه‌نویسی را قدم‌به‌قدم
+                و با پروژه‌های ساده یاد می‌گیریم.
+            </p>
+
+        </div>
+
+
+        <div class="card feature-card">
+
+            <div class="icon">💡</div>
+
+            <h3>ایده‌پردازی</h3>
+
+            <p>
+                ایده‌های مختلف را بررسی می‌کنیم
+                و برای آن‌ها راه‌حل می‌سازیم.
+            </p>
+
+        </div>
+
+
+        <div class="card feature-card">
+
+            <div class="icon">🚀</div>
+
+            <h3>ساخت</h3>
+
+            <p>
+                آموخته‌ها را در پروژه‌های واقعی
+                به کار می‌بریم.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="home-project">
+
+    <div class="home-project-content">
+
+        <span class="small-title">
+            پروژه‌های درسی
+        </span>
+
+        <h2>
+            پروژه‌هایت را
+            <span class="gradient">نمایش بده</span>
+        </h2>
+
+        <p>
+            پروژه‌های درسی و کارهایی که ساخته‌ایم
+            در یک بخش اختصاصی قرار می‌گیرند.
+        </p>
+
+        <a href="school-projects.html" class="btn btn-primary">
+            مشاهده پروژه‌های درسی
+        </a>
+
+    </div>
+
+    <div class="home-project-image">
+
+        <img src="IGOK.jpg" alt="پروژه IGOK">
 
     </div>
 
@@ -86,8 +209,17 @@
 
 <footer>
 
-    © 2026
-    <strong>برنامه نویسی با امیر علی</strong>
+    <div class="footer-logo">
+        برنامه نویسی <span>با امیر علی</span>
+    </div>
+
+    <p>
+        یاد بگیر، بساز، تجربه کن.
+    </p>
+
+    <div class="copyright">
+        © 2026 برنامه نویسی با امیر علی
+    </div>
 
 </footer>
 
@@ -95,5 +227,4 @@
 <script src="script.js"></script>
 
 </body>
-
 </html>
